@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calendrier, tarifs et contact | Gîte du Chêne Familial</title>
+  <meta name="description" content="Consultez les disponibilités en temps réel du Gîte du Chêne Familial. Tarifs à la semaine ou au week-end. Réservation directe.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER FIXE ===== -->
+<header id="header">
+  <a href="index.html" class="logo">Le Gîte du <span>Chêne Familial</span></a>
+  <div class="burger-menu" onclick="toggleMenu()">
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="legite.html">Le Gîte</a></li>
+      <li><a href="calendrier.html">Calendrier & Tarifs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== MENU MOBILE ===== -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Accueil</a>
+  <a href="legite.html">Le Gîte</a>
+  <a href="calendrier.html">Calendrier & Tarifs</a>
+</nav>
+
+<!-- ===== HERO PAGE CALENDRIER ===== -->
+<section class="hero hero-petit">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('images/baniere/accueil.webp') center/cover; z-index: 0;"></div>
+  <div class="hero-overlay" style="display: none;"></div>
+  <div class="hero-content">
+    <h1>Disponibilités & tarifs</h1>
+    <p class="hero-sous-titre">Calendrier synchronisé avec Airbnb</p>
+  </div>
+</section>
+
+<!-- ===== TARIFS 2026 ===== -->
+<section class="section" style="padding-bottom: 2rem;">
+  <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+    <h2 style="display: block; text-align: center; margin-bottom: 1.5rem;">Tarifs 2026</h2>
+    <p style="font-size: 1.1rem; color: var(--gris-moyen); margin-bottom: 3rem;">
+      Gîte entier pour 8 personnes • Piscine chauffée • Draps et linge fournis
+    </p>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 3rem; margin-bottom: 3rem;">
+      <div style="text-align: center; min-width: 200px;">
+        <div style="font-size: 1.8rem; font-weight: 350; color: var(--bordeaux); margin-bottom: 0.5rem;">Basse saison 7 jours</div>
+        <div style="font-size: 2.5rem; font-weight: 450; color: var(--gris-fonce);">1547€</div>
+        <div style="color: var(--gris-moyen); margin-top: 0.5rem;">par semaine</div>
+        <div style="margin-top: 1rem; font-size: 0.95rem;">Avril,Mai,Juin,Septembre</div>
+      </div>
+      <div style="text-align: center; min-width: 200px;">
+        <div style="font-size: 1.8rem; font-weight: 350; color: var(--bordeaux); margin-bottom: 0.5rem;">Haute saison 7 jours</div>
+        <div style="font-size: 2.5rem; font-weight: 450; color: var(--gris-fonce);">1596€</div>
+        <div style="color: var(--gris-moyen); margin-top: 0.5rem;">par semaine</div>
+        <div style="margin-top: 1rem; font-size: 0.95rem;">Juillet, Août</div>
+      </div>
+      <div style="text-align: center; min-width: 200px;">
+        <div style="font-size: 1.8rem; font-weight: 350; color: var(--bordeaux); margin-bottom: 0.5rem;">Basse saison 4 nuits</div>
+        <div style="font-size: 2.5rem; font-weight: 450; color: var(--gris-fonce);">880€</div>
+        <div style="color: var(--gris-moyen); margin-top: 0.5rem;">pour 4 nuits</div>
+        <div style="margin-top: 1rem; font-size: 0.95rem;">Avril,Mai,Juin,Septembre</div>
+      </div>
+    </div>
+    <p style="font-size: 0.95rem; color: var(--gris-moyen); border-top: 1px solid #eee; padding-top: 2rem; margin-top: 1rem;">
+      💶 Caution : 1000€ • Ménage : 120€ (optionnel) • Taxe de séjour en supplément
+    </p>
+  </div>
+</section>
+
+<!-- ===== CALENDRIER DISPONIBILITÉS ===== -->
+<section class="section section-claire" style="text-align: center;">
+  <h2 style="text-align: center; display: block; margin-left: auto; margin-right: auto;">Calendrier des disponibilités</h2>
+  <p style="text-align: center; max-width: 600px; margin-left: auto; margin-right: auto; margin-bottom: 2rem; color: var(--gris-moyen);">
+    Consultez les disponibilités en temps réel sur Airbnb.
+  </p>
+  <div style="display: flex; justify-content: center; align-items: center; width: 100%;">
+    <div style="display: flex; flex-direction: column; align-items: center; background: white; padding: 2.5rem; border-radius: 16px; box-shadow: 0 10px 30px rgba(0,0,0,0.03); max-width: 500px; width: 100%; margin: 0 auto;">
+      <div style="font-size: 3rem; margin-bottom: 1rem;">📅</div>
+      <h3 style="margin-bottom: 1rem; font-weight: 400; font-size: 1.5rem; text-align: center;">Voir les disponibilités</h3>
+      <p style="margin-bottom: 2rem; color: var(--gris-moyen); text-align: center;">Calendrier synchronisé en temps réel.</p>
+      <a href="https://www.airbnb.fr/rooms/35940360" target="_blank" class="bouton" style="margin-bottom: 0.5rem; width: 100%; max-width: 300px; text-align: center;">Voir le calendrier sur Airbnb</a>
+      <p style="margin-top: 1.5rem; font-size: 0.95rem; text-align: center;"><a href="#contact" style="color: var(--bordeaux); font-weight: 500;">→ Faire une demande directe</a></p>
+    </div>
+  </div>
+  <div style="display: flex; justify-content: center; align-items: center; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+    <a href="https://www.airbnb.fr/rooms/35940360" target="_blank" class="bouton bouton-secondaire">Réserver sur Airbnb</a>
+    <a href="#contact" class="bouton">Contact direct</a>
+  </div>
+</section>
+
+<!-- ===== POURQUOI RÉSERVER EN DIRECT ===== -->
+<section class="section" style="padding: 4rem 8%;">
+  <div style="max-width: 1000px; margin: 0 auto;">
+    <h2 style="text-align: center; display: block; margin-bottom: 3rem;">Réserver en direct</h2>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; text-align: center;">
+      <div>
+        <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--bordeaux);;">💰</div>
+        <h3 style="margin-bottom: 0.5rem;">Meilleur tarif</h3>
+        <p style="color: var(--gris-moyen);">Pas de commission, vous payez le juste prix</p>
+      </div>
+      <div>
+        <div style="font-size: 2.5rem; margin-bottom: 1rem; color: var(--bordeaux);;">🤝</div>
+        <h3 style="margin-bottom: 0.5rem;">Contact direct</h3>
+        <p style="color: var(--gris-moyen);">Nous échangeons ensemble pour votre séjour</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FORMULAIRE DE CONTACT ===== -->
+<section id="contact" class="section section-claire" style="text-align: center;">
+  <h2 style="text-align: center; display: block; margin-left: auto; margin-right: auto;">Demande de disponibilité</h2>
+  <p style="text-align: center; max-width: 600px; margin-left: auto; margin-right: auto; margin-bottom: 2rem; color: var(--gris-moyen);">
+    Envoyez-nous votre demande. Réponse sous 24h.
+  </p>
+  <div style="display: flex; justify-content: center; width: 100%;">
+    <form class="formulaire-contact" action="https://formspree.io/f/mpqjrybo" method="POST" style="max-width: 700px; width: 100%; margin: 0 auto; text-align: left;">
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+        <div class="champ"><label for="prenom">Prénom *</label><input type="text" id="prenom" name="prenom" required style="width: 100%;"></div>
+        <div class="champ"><label for="nom">Nom *</label><input type="text" id="nom" name="nom" required style="width: 100%;"></div>
+      </div>
+      <div class="champ" style="margin-bottom: 1.5rem;"><label for="email">Email *</label><input type="email" id="email" name="email" required style="width: 100%;"></div>
+      <div class="champ" style="margin-bottom: 1.5rem;"><label for="telephone">Téléphone</label><input type="tel" id="telephone" name="telephone" style="width: 100%;"></div>
+      <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+        <div class="champ"><label for="arrivee">Arrivée *</label><input type="date" id="arrivee" name="arrivee" required style="width: 100%;"></div>
+        <div class="champ"><label for="depart">Départ *</label><input type="date" id="depart" name="depart" required style="width: 100%;"></div>
+      </div>
+      <div class="champ" style="margin-bottom: 1.5rem;">
+        <label for="personnes">Personnes *</label>
+        <select id="personnes" name="personnes" required style="width: 100%;">
+          <option value="">-- Sélectionnez --</option>
+          <option value="2">8 personnes</option>
+          <option value="4">9 personnes en option avec supplément</option>
+        </select>
+      </div>
+      <div class="champ" style="margin-bottom: 2rem;"><label for="message">Message *</label><textarea id="message" name="message" rows="5" placeholder="Votre message..." required style="width: 100%;"></textarea></div>
+      <div style="text-align: center;"><button type="submit" class="bouton" style="border: none; cursor: pointer; min-width: 250px;">Envoyer la demande</button></div>
+    </form>
+  </div>
+</section>
+
+<!-- ===== ACCÈS ===== -->
+<section class="section">
+  <h2 style="text-align: center; display: block;">Nous trouver</h2>
+  <div style="max-width: 800px; margin: 2rem auto 0;">
+    <div style="background-color: #f5f5f5; padding: 2rem; text-align: center;">
+      <div style="font-size: 2rem; margin-bottom: 1rem;">📍</div>
+      <h3 style="margin-bottom: 1rem; font-weight: 450;">Lieu-dit La Capelle</h3>
+      <p style="margin-bottom: 0.5rem;">24130 Saint-Pierre-d'Eyraud</p>
+      <p style="margin-bottom: 1.5rem; color: var(--gris-moyen);">Dordogne</p>
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1.5rem;">
+        <div><strong>Voiture</strong><br>A89 sortie Bergerac</div>
+        <div><strong>Train</strong><br>Gare de Bergerac (15 min)</div>
+        <div><strong>Avion</strong><br>Aéroport Bergerac (20 min)</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <a href="index.html" class="footer-logo">Le Gîte du <span>Chêne Familial</span></a>
+    <div class="footer-grid">
+      <div><h4>Adresse</h4><p>Lieu-dit La Capelle<br>24130 Saint-Pierre-d'Eyraud<br>Dordogne</p></div>
+      <div><h4>Contact</h4><p><a href="mailto:d.thebault24@gmail.com">d.thebault24@gmail.com</a><br><a href="tel:0689071428">06 89 07 14 28</a></p></div>
+      <div><h4>Légal</h4><p><a href="mentions-legales.html">Mentions légales</a></p></div>
+    </div>
+    <div class="footer-infos"><p>© 2026 Le Gîte du Chêne Familial</p></div>
+  </div>
+</footer>
+
+<!-- ===== POPUP TÉLÉPHONE - BAS GAUCHE ===== -->
+<div class="popup-telephone-fixe" id="popup-telephone">
+  <div class="popup-fermer" onclick="document.getElementById('popup-telephone').classList.add('masque')">✕</div>
+  <div class="popup-bulle">
+    <div class="popup-contenu">
+      <div class="popup-ligne1">Pour bénéficier du meilleur tarif,</div>
+      <div class="popup-ligne2"><span>réservez directement au</span><span class="popup-telephone"><a href="tel:0689071428">06 89 07 14 28</a></span></div>
+      <div class="popup-ligne3"><span>ou par mail :</span><span class="popup-mail"><a href="mailto:d.thebault24@gmail.com">d.thebault24@gmail.com</a></span></div>
+    </div>
+  </div>
+</div>
+
+<!-- ===== POPUP CONTACT - BAS DROITE ===== -->
+<div class="popup-contact-fixe">
+  <div class="popup-bulle">
+    <div class="popup-icone">✉️</div>
+    <div class="popup-contenu"><a href="mailto:d.thebault24@gmail.com" style="color: var(--bordeaux); text-decoration: none; font-weight: 600;">Contact</a></div>
+  </div>
+</div>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+  document.querySelectorAll('.mobile-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.remove('open');
+    });
+  });
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    header.classList.toggle('scrolled', window.scrollY > 50);
+  });
+</script>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mentions légales | Gîte du Chêne Familial</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+  <a href="index.html" class="logo">Le Gîte du <span>Chêne Familial</span></a>
+  <div class="burger-menu" onclick="toggleMenu()">
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="legite.html">Le Gîte</a></li>
+      <li><a href="calendrier.html">Calendrier & Tarifs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== MENU MOBILE ===== -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Accueil</a>
+  <a href="legite.html">Le Gîte</a>
+  <a href="calendrier.html">Calendrier & Tarifs</a>
+</nav>
+
+<!-- ===== CONTENU PRINCIPAL ===== -->
+<section class="section" style="padding-top: 8rem;">
+  <h1 style="text-align: center; margin-bottom: 2rem;">Mentions légales</h1>
+
+  <div style="max-width: 800px; margin: 0 auto; background: white; padding: 2rem; border-radius: 16px; box-shadow: 0 5px 15px rgba(0,0,0,0.02);">
+
+    <h2>1. Éditeur du site</h2>
+    <p>
+      <strong>Le Gîte du Chêne Familial</strong><br>
+      Lieu-dit La Capelle<br>
+      24130 Saint-Pierre-d'Eyraud<br>
+      Tél. : 06 89 07 14 28<br>
+      Email : d.thebault24@gmail.com
+    </p>
+    <p>Directeur de la publication : Didier Thebault</p>
+
+    <h2>2. Hébergement</h2>
+    <p><em>À compléter après choix de l'hébergeur</em></p>
+
+    <h2>3. Propriété intellectuelle</h2>
+    <p>
+      L'ensemble des contenus (textes, photos, vidéos) est protégé par le droit d'auteur. 
+      Toute reproduction sans autorisation est interdite.
+    </p>
+
+    <h2>4. Données personnelles</h2>
+    <p>
+      Aucune donnée personnelle n'est collectée sans votre consentement. 
+      Le formulaire de contact transmet votre message sans stockage sur ce site.
+      Vous pouvez demander la suppression de vos données à tout moment par email.
+    </p>
+    <p>Conformément au RGPD, vous disposez d'un droit d'accès, de rectification et de suppression.</p>
+
+    <h2>5. Cookies</h2>
+    <p>
+      Ce site n'utilise pas de cookies de suivi. Seuls les cookies techniques nécessaires à l'affichage sont utilisés.
+    </p>
+
+<h2>6. Crédits photos</h2>
+<p>Certaines images utilisées sur ce site proviennent de sources sous licence libre. Nous remercions leurs auteurs pour leur travail.</p>
+
+<ul style="list-style: none; padding: 0; margin-top: 1rem;">
+  <li style="margin-bottom: 0.8rem;">
+    <strong>Eymet – Place des arcades</strong><br>
+    Auteur : <a href="https://commons.wikimedia.org/wiki/User:MOSSOT" target="_blank">MOSSOT</a><br>
+    Source : <a href="https://commons.wikimedia.org/wiki/File:Eymet_place_arcades_(13).JPG" target="_blank">Wikimedia Commons</a><br>
+    Licence : <a href="https://creativecommons.org/licenses/by-sa/4.0/" target="_blank">CC BY-SA 4.0</a><br>
+    Description : Vue des arcades de la place Gambetta à Eymet (Dordogne).
+  </li>
+</ul>
+
+<p style="margin-top: 1.5rem;">
+  D'autres images proviennent de banques d'images libres de droit :
+  <a href="https://unsplash.com" target="_blank">Unsplash</a>,
+  <a href="https://pexels.com" target="_blank">Pexels</a> et
+  <a href="https://pixabay.com" target="_blank">Pixabay</a>.
+  Conformément à leurs licences, aucune attribution spécifique n'est requise.
+</p>
+
+<p style="margin-top: 1.5rem; font-size: 0.9rem; color: var(--gris-moyen);">
+  Conformément aux licences, vous pouvez réutiliser ces images en respectant les conditions (attribution, partage à l’identique le cas échéant).
+</p>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <a href="index.html" class="footer-logo">Le Gîte du <span>Chêne Familial</span></a>
+    <div class="footer-grid">
+      <div>
+        <h4>Adresse</h4>
+        <p>Lieu-dit La Capelle<br>24130 Saint-Pierre-d'Eyraud<br>Dordogne</p>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <p>
+          <a href="mailto:d.thebault24@gmail.com">d.thebault24@gmail.com</a><br>
+          <a href="tel:0689071428">06 89 07 14 28</a>
+        </p>
+      </div>
+      <div>
+        <h4>Légal</h4>
+        <p><a href="mentions-legales.html">Mentions légales</a></p>
+      </div>
+    </div>
+    <div class="footer-infos">
+      <p>© 2026 Le Gîte du Chêne Familial</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== POPUPS ===== -->
+<div class="popup-telephone-fixe" id="popup-telephone">
+  <div class="popup-fermer" onclick="document.getElementById('popup-telephone').classList.add('masque')">✕</div>
+  <div class="popup-bulle">
+    <div class="popup-contenu">
+      <div class="popup-ligne1">Pour bénéficier du meilleur tarif,</div>
+      <div class="popup-ligne2"><span>réservez directement au</span><span class="popup-telephone"><a href="tel:0689071428">06 89 07 14 28</a></span></div>
+      <div class="popup-ligne3"><span>ou par mail :</span><span class="popup-mail"><a href="mailto:d.thebault24@gmail.com">d.thebault24@gmail.com</a></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-contact-fixe">
+  <div class="popup-bulle">
+    <div class="popup-icone">✉️</div>
+    <div class="popup-contenu"><a href="mailto:d.thebault24@gmail.com" style="color: var(--bordeaux); text-decoration: none; font-weight: 600;">Contact</a></div>
+  </div>
+</div>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+  document.querySelectorAll('.mobile-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.remove('open');
+    });
+  });
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    header.classList.toggle('scrolled', window.scrollY > 50);
+  });
+</script>
+
+</body>
+</html>

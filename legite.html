@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Gîte - Intérieur, extérieur, activités | Gîte du Chêne Familial</title>
+  <meta name="description" content="Découvrez le Gîte du Chêne Familial en images : intérieur chaleureux, piscine chauffée, terrain boisé, activités en Dordogne et vidéo drone.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600&display=swap" rel="stylesheet">
+  <style>
+    .sous-menu-gite {
+      display: flex;
+      justify-content: center;
+      gap: 1.2rem;
+      margin: 3rem 0 0rem;
+      flex-wrap: wrap;
+    }
+    .bouton-categorie {
+      background: white;
+      border: 1px solid rgba(122, 46, 58, 0.2);
+      padding: 0.9rem 2.2rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      color: var(--gris-fonce);
+      font-weight: 500;
+      border-radius: 50px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.02);
+      letter-spacing: 0.3px;
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .bouton-categorie span { font-size: 1.1rem; }
+    .bouton-categorie.active {
+      background: var(--bordeaux);
+      border-color: var(--bordeaux);
+      color: white;
+      box-shadow: 0 8px 18px rgba(122, 46, 58, 0.15);
+    }
+    .bouton-categorie:hover {
+      border-color: var(--bordeaux);
+      background: rgba(122, 46, 58, 0.03);
+    }
+    .bouton-categorie.active:hover {
+      background: var(--bordeaux);
+      color: white;
+    }
+    @media (max-width: 600px) {
+      .sous-menu-gite {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.8rem;
+      }
+      .bouton-categorie {
+        width: 100%;
+        max-width: 280px;
+        justify-content: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<!-- ===== HEADER ===== -->
+<header id="header">
+  <a href="index.html" class="logo">Le Gîte du <span>Chêne Familial</span></a>
+  <div class="burger-menu" onclick="toggleMenu()">
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="legite.html">Le Gîte</a></li>
+      <li><a href="calendrier.html">Calendrier & Tarifs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== MENU MOBILE ===== -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Accueil</a>
+  <a href="legite.html">Le Gîte</a>
+  <a href="calendrier.html">Calendrier & Tarifs</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero hero-petit">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('images/baniere/accueil.webp') center/cover; z-index: 0;"></div>
+  <div class="hero-overlay" style="display: none;"></div>
+  <div class="hero-content">
+    <h1>Le Gîte</h1>
+    <p class="hero-sous-titre">Un intérieur chaleureux, un écrin de nature, une région à découvrir</p>
+  </div>
+</section>
+
+<!-- ===== BOUTONS CATÉGORIES ===== -->
+<div class="sous-menu-gite">
+  <button id="btn-interieur" class="bouton-categorie active"><span>🏠</span> Intérieur</button>
+  <button id="btn-exterieur" class="bouton-categorie"><span>🌿</span> Extérieur & piscine</button>
+  <button id="btn-activites" class="bouton-categorie"><span>🚴</span> Activités & alentours</button>
+  <button id="btn-video" class="bouton-categorie"><span>🎥</span> Vidéo drone</button>
+</div>
+
+<!-- ===== ZONE DE CONTENU DYNAMIQUE ===== -->
+<section class="section" style="padding-top: 1rem;">
+
+<!-- 1. INTÉRIEUR -->
+<div id="contenu-interieur" class="contenu-categorie active">
+  <div class="media-card"><p>Salon lumineux, cheminée, canapés confortables</p><div class="image-container"><img src="images/interieur/galerie/salon.webp" alt="Salon avec cheminée"></div></div>
+  <div class="media-card"><p>Cuisine toute équipée : four, lave-vaisselle, café</p><div class="image-container"><img src="images/interieur/galerie/cuisine.webp" alt="Cuisine équipée"></div></div>
+  <div class="media-card"><p>Grande table</p><div class="image-container"><img src="images/interieur/galerie/table.webp" alt="Salle à manger"></div></div>
+  <div class="media-card"><p>Coin lecture TV confortable</p><div class="image-container"><img src="images/interieur/galerie/coinlec.webp" alt="Coin lecture"></div></div>
+  <div class="media-card"><p>Chambre parentale</p><div class="image-container"><img src="images/interieur/galerie/chambre1.webp" alt="Chambre 1"></div></div>
+  <div class="media-card"><p>Chambre double</p><div class="image-container"><img src="images/interieur/galerie/chambre2.webp" alt="Chambre 2"></div></div>
+  <div class="media-card"><p>Chambre double</p><div class="image-container"><img src="images/interieur/galerie/chambre3.webp" alt="Chambre 3"></div></div>
+  <div class="media-card"><p>Chambre avec lits jumeaux</p><div class="image-container"><img src="images/interieur/galerie/chambre4.webp" alt="Chambre 4"></div></div>
+  <div class="media-card"><p>Salle d'eau spacieuse, RDC douche à l'italienne</p><div class="image-container"><img src="images/interieur/galerie/douche.webp" alt="Douche"></div></div>
+  <div class="media-card"><p>Salle d'eau - RDC vasque et rangements</p><div class="image-container"><img src="images/interieur/galerie/sdb1.webp" alt="Salle d'eau 1"></div></div>
+  <div class="media-card"><p>Salle d'eau - Etage baignoire</p><div class="image-container"><img src="images/interieur/galerie/sdb2.webp" alt="Salle d'eau 2"></div></div>
+</div>
+
+<!-- 2. EXTÉRIEUR -->
+<div id="contenu-exterieur" class="contenu-categorie">
+  <div class="media-card"><p>Le Gîte</p><div class="image-container"><img src="images/exterieur/galerie/gite.webp" alt="Vue d'ensemble du gîte"></div></div>
+  <div class="media-card"><p>Avant du gîte</p><div class="image-container"><img src="images/exterieur/galerie/avant-maison.webp" alt="Façade avant du gîte"></div></div>
+  <div class="media-card"><p>Entrée</p><div class="image-container"><img src="images/exterieur/galerie/entree-gite.webp" alt="Entrée du gîte"></div></div>
+  <div class="media-card"><p>Piscine chauffée (1,40m)</p><div class="image-container"><img src="images/exterieur/galerie/piscine2.webp" alt="Piscine chauffée"></div></div>
+  <div class="media-card"><p>Espace piscine</p><div class="image-container"><img src="images/exterieur/galerie/piscine.webp" alt="Espace piscine"></div></div>
+  <div class="media-card"><p>Coin piscine</p><div class="image-container"><img src="images/exterieur/galerie/coin-piscine.webp" alt="Coin piscine"></div></div>
+  <div class="media-card"><p>Vue arrière gauche</p><div class="image-container"><img src="images/exterieur/galerie/vue-arriere-g.webp" alt="Vue arrière gauche"></div></div>
+  <div class="media-card"><p>Vue arrière droite</p><div class="image-container"><img src="images/exterieur/galerie/vue-arriere-d.webp" alt="Vue arrière droite"></div></div>
+  <div class="media-card"><p>Terrasse</p><div class="image-container"><img src="images/exterieur/galerie/terrasse.webp" alt="Terrasse"></div></div>
+  <div class="media-card"><p>Table extérieure</p><div class="image-container"><img src="images/exterieur/galerie/table-ext.webp" alt="Table extérieure"></div></div>
+  <div class="media-card"><p>Coin repos & ping-pong</p><div class="image-container"><img src="images/exterieur/galerie/vue-du-parc.webp" alt="Coin repos"></div></div>
+  <div class="media-card"><p>Vue aérienne</p><div class="image-container"><img src="images/exterieur/galerie/vue-aerienne.webp" alt="Vue aérienne"></div></div>
+</div>
+
+<!-- 3. ACTIVITÉS -->
+<div id="contenu-activites" class="contenu-categorie">
+  <div class="media-card"><p>Château de Monbazillac</p><div class="image-container"><img src="images/activite/galerie/monbazillac.webp" alt="Château de Monbazillac"></div></div>
+  <div class="media-card"><p>Eymet - Bastide anglaise - Marché</p><div class="image-container"><img src="images/activite/galerie/eymet.webp" alt="Place Gambetta à Eymet"></div></div>
+  <div class="media-card"><p>Canoë sur la Dordogne</p><div class="image-container"><img src="images/activite/galerie/canoe.webp" alt="Descente en canoë"></div></div>
+  <div class="media-card"><p>Poney-club des Trois Chênes</p><div class="image-container"><img src="images/activite/galerie/poney-club.webp" alt="Balade à poney"></div></div>
+  <div class="media-card"><p>Parc du Bournat</p><div class="image-container"><img src="images/activite/galerie/bournat.webp" alt="Village 1900"></div></div>
+  <div class="media-card"><p>Marché de Bergerac</p><div class="image-container"><img src="images/activite/galerie/marche-bergerac.webp" alt="Marché traditionnel"></div></div>
+</div>
+
+<!-- 4. VIDÉO DRONE -->
+<div id="contenu-video" class="contenu-categorie">
+  
+  <div class="media-card">
+    <p>Vue aérienne du Gîte</p>
+    <div class="image-container" style="aspect-ratio: 16/9; background: #1a1a1a; display: flex; align-items: center; justify-content: center;">
+      <iframe width="100%" height="100%" style="border-radius: 12px;"
+        src="https://www.youtube.com/embed/SsNUfrr_5fU"
+        title="Vidéo du Gîte"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+  <div class="media-card">
+    <p>Piscine & espace nature</p>
+    <div class="image-container" style="aspect-ratio: 16/9; background: #1a1a1a; display: flex; align-items: center; justify-content: center;">
+      <iframe width="100%" height="100%" style="border-radius: 12px;"
+        src="https://www.youtube.com/embed/ZnJxWrYVk7A"
+        title="Vidéo Piscine"
+        frameborder="0"
+        allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </div>
+
+</div>
+
+
+</section> <!-- Fin section contenu dynamique -->
+
+<!-- ===== OFFICE DE TOURISME (après les catégories) ===== -->
+<div class="office-tourisme-block">
+  <div class="office-tourisme-icon">🗺️</div>
+  <p class="office-tourisme-title">Office de Tourisme</p>
+  <p class="office-tourisme-subtitle">Bergerac - Sud Dordogne</p>
+  <a href="https://www.pays-bergerac-tourisme.com" target="_blank" rel="noopener noreferrer" class="bouton">Site officiel</a>
+</div>
+
+<!-- ===== ÉQUIPEMENTS ===== -->
+<section class="section" style="padding: 5rem 8%;">
+  <div style="text-align: center; margin-bottom: 3.5rem;">
+    <h2 style="display: block; margin-bottom: 1rem; color: var(--gris-fonce);">Tout le confort pour 8 personnes</h2>
+    <div style="width: 80px; height: 2px; background: var(--bordeaux); opacity: 0.3; margin: 0 auto;"></div>
+  </div>
+  <div class="grille-equipements" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2.5rem; max-width: 1100px; margin: 0 auto;">
+    <!-- COLONNE CUISINE -->
+    <div style="background: white; padding: 2rem 1.5rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.02); text-align: center;">
+      <div style="font-size: 2.2rem; margin-bottom: 1rem; color: var(--bordeaux);">🍳</div>
+      <h3 style="font-size: 1.3rem; font-weight: 500; margin-bottom: 1.2rem; color: var(--gris-fonce); border-bottom: 1px solid rgba(122,46,58,0.1); padding-bottom: 0.8rem;">Cuisine équipée</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; text-align: left;">
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🍴 Four</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🧊 Réfrigérateur</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🍽️ Lave-vaisselle</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">☕ Machine à expresso</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">⚡ Cafetière filtre</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🔥 Barbecue / plancha</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🥘 Vaisselle & ustensiles</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🥂 Verres à vin</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🔥 Micro-ondes</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🫖 Bouilloire électrique</li>
+      </ul>
+    </div>
+    <!-- COLONNE CONFORT -->
+    <div style="background: white; padding: 2rem 1.5rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.02); text-align: center;">
+      <div style="font-size: 2.2rem; margin-bottom: 1rem; color: var(--bordeaux);">🛏️</div>
+      <h3 style="font-size: 1.3rem; font-weight: 500; margin-bottom: 1.2rem; color: var(--gris-fonce); border-bottom: 1px solid rgba(122,46,58,0.1); padding-bottom: 0.8rem;">Confort & linge</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; text-align: left;">
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🛏️ Draps en coton fournis</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🧺 Lave-linge</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">👕 Étendoir à linge</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🧼 Fer à repasser</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🧴 Sèche-cheveux</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">👶 Lit parapluie (sur demande)</li>
+      </ul>
+    </div>
+    <!-- COLONNE LOISIRS -->
+    <div style="background: white; padding: 2rem 1.5rem; border-radius: 16px; box-shadow: 0 10px 25px rgba(0,0,0,0.02); text-align: center;">
+      <div style="font-size: 2.2rem; margin-bottom: 1rem; color: var(--bordeaux);">🎯</div>
+      <h3 style="font-size: 1.3rem; font-weight: 500; margin-bottom: 1.2rem; color: var(--gris-fonce); border-bottom: 1px solid rgba(122,46,58,0.1); padding-bottom: 0.8rem;">Loisirs & équipements</h3>
+      <ul style="list-style: none; padding: 0; margin: 0; text-align: left;">
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">📶 Wifi haut débit</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">📺 Télévision</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🔥 Cheminée</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🏓 Table de ping-pong</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🎯 Fléchettes</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🎱 Boules de pétanque</li>
+        <li style="margin-bottom: 0.7rem; display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);">🚴 3 vélos adultes</li>
+      </ul>
+    </div>
+  </div>
+  <!-- SÉCURITÉ -->
+  <div style="display: flex; justify-content: center; align-items: center; gap: 2rem; flex-wrap: wrap; max-width: 800px; margin: 3rem auto 0; padding-top: 2rem; border-top: 1px solid rgba(122,46,58,0.1);">
+    <div style="display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);"><span style="font-size: 1.1rem;">🔒</span> Détecteurs de fumée</div>
+    <div style="display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);"><span style="font-size: 1.1rem;">🆘</span> Kit de premiers secours</div>
+    <div style="display: flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen);"><span style="font-size: 1.1rem;">🚪</span> Entrée privée</div>
+  </div>
+</section>
+
+<!-- ===== APPEL RÉSERVATION ===== -->
+<section style="background-color: #7A2E3A; color: white; text-align: center; padding: 2rem 8%;">
+  <h2 style="color: white; margin-bottom: 1.2rem; font-size: 2rem;">Prêt à réserver ?</h2>
+  <p style="font-size: 1.1rem; margin-bottom: 1.8rem;">Calendrier synchronisé avec Airbnb</p>
+  <a href="calendrier.html" class="bouton" style="background-color: white; color: #7A2E3A; border-color: white;">Voir les disponibilités</a>
+</section>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <a href="index.html" class="footer-logo">Le Gîte du <span>Chêne Familial</span></a>
+    <div class="footer-grid">
+      <div><h4>Adresse</h4><p>Lieu-dit La Capelle<br>24130 Saint-Pierre-d'Eyraud<br>Dordogne</p></div>
+      <div><h4>Contact</h4><p><a href="mailto:d.thebault24@gmail.com">d.thebault24@gmail.com</a><br><a href="tel:0689071428">06 89 07 14 28</a></p></div>
+      <div><h4>Légal</h4><p><a href="mentions-legales.html">Mentions légales</a></p></div>
+    </div>
+    <div class="footer-infos"><p>© 2026 Le Gîte du Chêne Familial</p></div>
+  </div>
+</footer>
+
+<!-- ===== POPUPS ===== -->
+<div class="popup-telephone-fixe" id="popup-telephone">
+  <div class="popup-fermer" onclick="document.getElementById('popup-telephone').classList.add('masque')">✕</div>
+  <div class="popup-bulle">
+    <div class="popup-contenu">
+      <div class="popup-ligne1">Pour bénéficier du meilleur tarif,</div>
+      <div class="popup-ligne2"><span>réservez directement au</span><span class="popup-telephone"><a href="tel:0689071428">06 89 07 14 28</a></span></div>
+      <div class="popup-ligne3"><span>ou par mail :</span><span class="popup-mail"><a href="mailto:d.thebault24@gmail.com">d.thebault24@gmail.com</a></span></div>
+    </div>
+  </div>
+</div>
+<div class="popup-contact-fixe">
+  <div class="popup-bulle">
+    <div class="popup-icone">✉️</div>
+    <div class="popup-contenu"><a href="mailto:d.thebault24@gmail.com" style="color: var(--bordeaux); text-decoration: none; font-weight: 600;">Contact</a></div>
+  </div>
+</div>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  // Menu burger
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+  document.querySelectorAll('.mobile-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.remove('open');
+    });
+  });
+
+  // Menu fixe scroll
+  window.addEventListener('scroll', function() {
+    document.getElementById('header').classList.toggle('scrolled', window.scrollY > 50);
+  });
+
+  // Gestion des onglets
+  const btnInterieur = document.getElementById('btn-interieur');
+  const btnExterieur = document.getElementById('btn-exterieur');
+  const btnActivites = document.getElementById('btn-activites');
+  const btnVideo = document.getElementById('btn-video');
+  const contenuInterieur = document.getElementById('contenu-interieur');
+  const contenuExterieur = document.getElementById('contenu-exterieur');
+  const contenuActivites = document.getElementById('contenu-activites');
+  const contenuVideo = document.getElementById('contenu-video');
+
+  function desactiverTous() {
+    [btnInterieur, btnExterieur, btnActivites, btnVideo].forEach(b => b.classList.remove('active'));
+    [contenuInterieur, contenuExterieur, contenuActivites, contenuVideo].forEach(c => c.classList.remove('active'));
+  }
+
+  btnInterieur.addEventListener('click', (e) => { e.preventDefault(); desactiverTous(); btnInterieur.classList.add('active'); contenuInterieur.classList.add('active'); window.location.hash = 'interieur'; });
+  btnExterieur.addEventListener('click', (e) => { e.preventDefault(); desactiverTous(); btnExterieur.classList.add('active'); contenuExterieur.classList.add('active'); window.location.hash = 'exterieur'; });
+  btnActivites.addEventListener('click', (e) => { e.preventDefault(); desactiverTous(); btnActivites.classList.add('active'); contenuActivites.classList.add('active'); window.location.hash = 'activites'; });
+  btnVideo.addEventListener('click', (e) => { e.preventDefault(); desactiverTous(); btnVideo.classList.add('active'); contenuVideo.classList.add('active'); window.location.hash = 'video'; });
+
+  window.addEventListener('load', () => {
+    if (window.location.hash === '#interieur') btnInterieur.click();
+    else if (window.location.hash === '#exterieur') btnExterieur.click();
+    else if (window.location.hash === '#activites') btnActivites.click();
+    else if (window.location.hash === '#video') btnVideo.click();
+  });
+</script>
+
+</body>
+</html>

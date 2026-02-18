@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Le Gîte du Chêne Familial - Gîte haut de gamme Dordogne</title>
+  <meta name="description" content="Gîte pour 8 personnes en Dordogne. Piscine chauffée, 5000m² de terrain, bois privé. Réservation directe.">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;450;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<!-- ===== HEADER FIXE ===== -->
+<header id="header">
+  <a href="index.html" class="logo">Le Gîte du <span>Chêne Familial</span></a>
+  <div class="burger-menu" onclick="toggleMenu()">
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+    <div class="burger-line"></div>
+  </div>
+  <nav>
+    <ul class="menu">
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="legite.html">Le Gîte</a></li>
+      <li><a href="calendrier.html">Calendrier & Tarifs</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- ===== MENU MOBILE ===== -->
+<nav class="mobile-nav" id="mobileNav">
+  <a href="index.html">Accueil</a>
+  <a href="legite.html">Le Gîte</a>
+  <a href="calendrier.html">Calendrier & Tarifs</a>
+</nav>
+
+<!-- ===== HERO ===== -->
+<section class="hero">
+  <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)), url('images/baniere/accueil.webp') center/cover; z-index: 0;"></div>
+  <div class="hero-overlay" style="display: none;"></div>
+  <div class="hero-content">
+    <h1>Le Gîte du Chêne Familial</h1>
+    <p class="hero-sous-titre">Dordogne • Piscine chauffée • 5000m² de nature • 8 personnes</p>
+    <div style="display: flex; gap: 4.0rem; justify-content: center; margin-top: 3rem;">
+      <a href="calendrier.html" class="bouton">Voir les disponibilités</a>
+      <a href="legite.html" class="bouton">Voir les photos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ===== INTRODUCTION ===== -->
+<section class="section">
+  <div style="max-width: 800px; margin: 0 auto; text-align: center;">
+    <h2>Un havre de paix en Dordogne</h2>
+    <p style="font-size: 1.25rem; color: #5A5A5A; margin-bottom: 2rem;">
+      Imaginez une grande maison de pierre, posée au bord d'un bois. Autour, 5000 m² de terrain rien que pour vous. 
+      Ici, pas de voisins, pas de bruit. Juste le vent dans les chênes et le clapotis de l'eau dans la piscine chauffée.
+    </p>
+  </div>
+</section>
+
+<!-- ===== ÉQUIPEMENTS ===== -->
+<section class="section">
+  <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 2rem; max-width: 1000px; margin: 0 auto;">
+    <div style="text-align: center;">
+      <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #7A2E3A;">🏊</div>
+      <h3>Piscine chauffée</h3>
+      <p style="color: #5A5A5A;">Fond plat 1,40m, volet roulant électrique</p>
+    </div>
+    <div style="text-align: center;">
+      <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #7A2E3A;">🌳</div>
+      <h3>5000m² de terrain</h3>
+      <p style="color: #5A5A5A;">Bois privé de 6000m², randonnée au départ</p>
+    </div>
+    <div style="text-align: center;">
+      <div style="font-size: 2.5rem; margin-bottom: 1rem; color: #7A2E3A;">🚴</div>
+      <h3>Équipements famille</h3>
+      <p style="color: #5A5A5A;">Vélos, ping-pong, pétanque, lit bébé</p>
+    </div>
+  </div>
+</section>
+
+<!-- ===== LOCALISATION ===== -->
+<section class="section section-claire" style="padding: 5rem 8%;">
+  <div style="display: flex; align-items: center; gap: 4rem; max-width: 1400px; margin: 0 auto;">
+    <div style="flex: 1; padding-right: 2rem; text-align: center;">
+      <div style="font-size: 3rem; margin-bottom: 0.5rem;">📍</div>
+      <h2 style="display: block; margin-bottom: 1.5rem;">Où se situe le gîte</h2>
+      <p style="font-size: 1.2rem; color: var(--gris-moyen); margin-bottom: 1.5rem;">Au cœur de la Dordogne, à Saint-Pierre-d'Eyraud</p>
+      <p style="margin-bottom: 1rem; line-height: 1.8; font-size: 1.1rem;">
+        <strong>Le Gîte du Chêne Familial</strong><br>Lieu-dit La Capelle<br>24130 Saint-Pierre-d'Eyraud
+      </p>
+      <div style="width: 80px; height: 2px; background: var(--bordeaux); opacity: 0.2; margin: 1.5rem auto;"></div>
+      <div style="display: flex; justify-content: center; gap: 2.5rem; flex-wrap: wrap; margin-top: 1rem;">
+        <div style="text-align: center;"><div style="font-size: 1.5rem; margin-bottom: 0.3rem;">🏙️</div><div><strong style="color: var(--bordeaux);">Bergerac</strong></div><div style="color: var(--gris-moyen);">15 min</div></div>
+        <div style="text-align: center;"><div style="font-size: 1.5rem; margin-bottom: 0.3rem;">🏘️</div><div><strong style="color: var(--bordeaux);">Sainte-Foy</strong></div><div style="color: var(--gris-moyen);">15 min</div></div>
+        <div style="text-align: center;"><div style="font-size: 1.5rem; margin-bottom: 0.3rem;">🛒</div><div><strong style="color: var(--bordeaux);">Pineuilh</strong></div><div style="color: var(--gris-moyen);">12 min</div></div>
+      </div>
+      <p style="margin-top: 2rem; color: var(--gris-moyen); font-size: 0.95rem;">Commerces à 5 km • Poney-club à 2 km • Randonnées au départ du gîte</p>
+      <div style="margin-top: 2rem;"><a href="legite.html" class="bouton bouton-secondaire">Découvrir la région</a></div>
+    </div>
+    <div style="width: 1px; height: 450px; background: var(--bordeaux); opacity: 0.2;"></div>
+    <div style="flex: 1; padding-left: 2rem; display: flex; justify-content: center;">
+      <img src="images/localisation/carte-gite.webp" alt="Localisation du Gîte du Chêne Familial" style="width: auto; height: auto; max-width: 750px; display: block;">
+    </div>
+  </div>
+</section>
+
+<!-- ===== GALERIE CATÉGORIES ===== -->
+<section class="galerie-categories">
+  <h2>Découvrir le gîte en images</h2>
+  <div class="categories-grid">
+    <a href="legite.html#interieur" class="categorie-card">
+      <img src="images/interieur/mise-en-avant/front.webp" alt="Intérieur du gîte" class="categorie-image" loading="lazy">
+      <div class="categorie-overlay"><h3>Intérieur</h3><p>Salon, cuisine, chambres, salle d'eau</p><span class="categorie-bouton">Découvrir</span></div>
+    </a>
+    <a href="legite.html#exterieur" class="categorie-card">
+      <img src="images/exterieur/mise-en-avant/front.webp" alt="Extérieur et piscine" class="categorie-image" loading="lazy">
+      <div class="categorie-overlay"><h3>Extérieur & piscine</h3><p>Piscine chauffée, terrain, bois, terrasse</p><span class="categorie-bouton">Découvrir</span></div>
+    </a>
+    <a href="legite.html#activites" class="categorie-card">
+      <img src="images/activite/mise-en-avant/front.webp" alt="Activités et alentours" class="categorie-image" loading="lazy">
+      <div class="categorie-overlay"><h3>Activités & alentours</h3><p>Randonnée, vélo, poney, Bergerac</p><span class="categorie-bouton">Découvrir</span></div>
+    </a>
+  </div>
+</section>
+
+<!-- ===== AVIS CLIENTS ===== -->
+<div style="max-width: 1000px; margin: 4rem auto 2rem; padding: 0 2rem;">
+  <div style="text-align: center; margin-bottom: 2.5rem;">
+    <div style="display: inline-flex; align-items: center; gap: 1rem; background: white; padding: 0.6rem 1.8rem; border-radius: 50px; box-shadow: 0 5px 20px rgba(0,0,0,0.02);">
+      <span style="display: flex; align-items: center; gap: 0.4rem;"><span style="font-size: 1.3rem;">🏆</span><span style="font-weight: 600; color: var(--gris-fonce);">Superhost</span></span>
+      <span style="width: 1px; height: 24px; background: var(--gris-moyen); opacity: 0.2;"></span>
+      <span style="display: flex; align-items: center; gap: 0.4rem;"><span style="color: var(--bordeaux); font-weight: 700; font-size: 1.2rem;">4,67</span><span style="color: var(--gris-moyen);">· 18 avis</span></span>
+    </div>
+  </div>
+  <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 1.5rem;">
+    <div style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.02);">
+      <div style="display: flex; gap: 0.3rem; margin-bottom: 0.8rem; color: #FFB400;">★★★★★</div>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--gris-fonce); font-style: italic; margin-bottom: 1rem;">"Agréable semaine au bord des bois. Piscine, ping-pong, pétanque… Merci Didier !"</p>
+      <div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 500; font-size: 0.9rem;">Pierre</span><span style="color: var(--gris-moyen); font-size: 0.8rem;">Août 2024</span></div>
+    </div>
+    <div style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.02);">
+      <div style="display: flex; gap: 0.3rem; margin-bottom: 0.8rem; color: #FFB400;">★★★★★</div>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--gris-fonce); font-style: italic; margin-bottom: 1rem;">"Havre de paix. Environnement magnifique, piscine impeccable. Didier et Josie : discrets, disponibles, conseils parfaits. On recommande !"</p>
+      <div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 500; font-size: 0.9rem;">Jean-Thomas</span><span style="color: var(--gris-moyen); font-size: 0.8rem;">Août 2025</span></div>
+    </div>
+    <div style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.02);">
+      <div style="display: flex; gap: 0.3rem; margin-bottom: 0.8rem; color: #FFB400;">★★★★★</div>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--gris-fonce); font-style: italic; margin-bottom: 1rem;">"Très belle semaine. Cadre calme et reposant. Accueil chaleureux de Didier et son amie. Des hôtes authentiques 😊"</p>
+      <div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 500; font-size: 0.9rem;">Laetitia</span><span style="color: var(--gris-moyen); font-size: 0.8rem;">Août 2025</span></div>
+    </div>
+    <div style="background: white; padding: 1.5rem; border-radius: 12px; box-shadow: 0 5px 20px rgba(0,0,0,0.02);">
+      <div style="display: flex; gap: 0.3rem; margin-bottom: 0.8rem; color: #FFB400;">★★★★★</div>
+      <p style="font-size: 0.95rem; line-height: 1.5; color: var(--gris-fonce); font-style: italic; margin-bottom: 1rem;">"Séjour très agréable, quartier paisible. Didier répondait à toutes nos demandes. Je recommande !"</p>
+      <div style="display: flex; justify-content: space-between; align-items: center;"><span style="font-weight: 500; font-size: 0.9rem;">Eva</span><span style="color: var(--gris-moyen); font-size: 0.8rem;">Août 2024</span></div>
+    </div>
+  </div>
+  <div style="text-align: center; margin-top: 2.5rem;">
+    <a href="https://www.airbnb.fr/rooms/35940360/reviews" target="_blank" style="display: inline-flex; align-items: center; gap: 0.6rem; color: var(--gris-moyen); text-decoration: none; font-size: 0.95rem; border-bottom: 1.5px solid var(--bordeaux); padding-bottom: 4px;">Voir les 18 avis sur Airbnb <span style="font-size: 1.1rem;">→</span></a>
+  </div>
+</div>
+
+<!-- ===== APPEL RÉSERVATION ===== -->
+<section style="background-color: #8C3241; color: white; text-align: center; padding: 2rem 8%;">
+  <h2 style="color: white; margin-bottom: 1.5rem;">Prêt à réserver ?</h2>
+  <p style="font-size: 1.2rem; margin-bottom: 2rem;">Calendrier synchronisé avec Airbnb</p>
+  <a href="calendrier.html" class="bouton" style="background-color: white; color: #7A2E3A; border-color: white;">Voir les disponibilités</a>
+</section>
+
+<!-- ===== POPUPS ===== -->
+<div class="popup-telephone-fixe" id="popup-telephone">
+  <div class="popup-fermer" onclick="document.getElementById('popup-telephone').classList.add('masque')">✕</div>
+  <div class="popup-bulle">
+    <div class="popup-contenu">
+      <div class="popup-ligne1">Pour bénéficier du meilleur tarif,</div>
+      <div class="popup-ligne2"><span>réservez directement au</span><span class="popup-telephone"><a href="tel:0689071428">06 89 07 14 28</a></span></div>
+      <div class="popup-ligne3"><span>ou par mail :</span><span class="popup-mail"><a href="mailto:d.thebault24@gmail.com">d.thebault24@gmail.com</a></span></div>
+    </div>
+  </div>
+</div>
+
+<div class="popup-contact-fixe">
+  <div class="popup-bulle">
+    <div class="popup-icone">✉️</div>
+    <div class="popup-contenu"><a href="mailto:d.thebault24@gmail.com" style="color: var(--bordeaux); text-decoration: none; font-weight: 600;">Contact</a></div>
+  </div>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer>
+  <div style="max-width: 1200px; margin: 0 auto;">
+    <a href="index.html" class="footer-logo">Le Gîte du <span>Chêne Familial</span></a>
+    <div class="footer-grid">
+      <div><h4>Adresse</h4><p>Lieu-dit La Capelle<br>24130 Saint-Pierre-d'Eyraud<br>Dordogne</p></div>
+      <div><h4>Contact</h4><p><a href="mailto:d.thebault24@gmail.com">d.thebault24@gmail.com</a><br><a href="tel:0689071428">06 89 07 14 28</a></p></div>
+      <div><h4>Légal</h4><p><a href="mentions-legales.html">Mentions légales</a></p></div>
+    </div>
+    <div class="footer-infos"><p>© 2026 Le Gîte du Chêne Familial</p></div>
+  </div>
+</footer>
+
+<!-- ===== SCRIPTS ===== -->
+<script>
+  function toggleMenu() {
+    document.getElementById('mobileNav').classList.toggle('open');
+  }
+  document.querySelectorAll('.mobile-nav a').forEach(link => {
+    link.addEventListener('click', () => {
+      document.getElementById('mobileNav').classList.remove('open');
+    });
+  });
+  window.addEventListener('scroll', function() {
+    const header = document.getElementById('header');
+    header.classList.toggle('scrolled', window.scrollY > 50);
+  });
+</script>
+
+</body>
+</html>
